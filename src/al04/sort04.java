@@ -43,7 +43,7 @@ public class sort04 {
             temp[i] = A[i];
         }
 
-        int k= s;
+        int k = s;
         int index1 = s; //앞쪽그룹 시작점
         int index2 = m+1; //뒤쪽그룹 시작점
 
