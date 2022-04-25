@@ -23,6 +23,21 @@ public class quick01 {
     }
 
     private static void quickSort(int[] A, int S, int E, int K) {
+
+        if(S<E){
+            int pivot = partition(A,S,E);
+            if(pivot == K){
+                return;
+            }else if (K < pivot){
+                quickSort(A,S,pivot-1,K);
+            }else{
+                quickSort(A,pivot+1,E,K);
+            }
+        }
+
+    }
+
+    private static int partition(int[] A, int S, int E) {
         int M = (S+E)/2;
         //중앙값을 1번째 요소로 이동하기
         int temp = A[S];
@@ -35,6 +50,20 @@ public class quick01 {
             while(pivot < A[j]){
                 j--;
             }
+            while(i<j && pivot >=A[i]){
+                i++;
+            }
+            swap(A,i,j);
         }
+        A[S] = A[i];
+        A[i] = pivot;
+        return i;
+
+    }
+
+    private static void swap(int[] A, int i, int j) {
+        int temp = A[i];
+        A[i] = A[j];
+        A[j] = temp;
     }
 }
