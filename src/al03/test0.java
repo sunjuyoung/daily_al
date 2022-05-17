@@ -17,13 +17,13 @@ public class test0 {
     for(int i=0; i<6; i++){
         number[i] = (int)(Math.random()*45)+1;
 
-        for(int d=0; d<dNum.length; d++){
-            for(int j=0; j<6; j++){
-                if(dNum[d][j] == number[i]){
-                    --i;
-                }
-            }
-        }
+        // for(int d=0; d<dNum.length; d++){
+        //     for(int j=0; j<6; j++){
+        //         if(dNum[d][j] == number[i]){
+        //             --i;
+        //         }
+        //     }
+        // }
     }
 
         Arrays.sort(number);
