@@ -7,6 +7,7 @@ import java.util.Scanner;
 public class test0 {
     public static void main(String[] args) {
 
+
     int[][]dNum = {
             {1,3,10,15,25,28},
             {8,9,24,25,29,35},
@@ -14,6 +15,10 @@ public class test0 {
 
     };
     int[] number = new int[6];
+    int N = 7;
+    for(int a=0; a<N; a++){
+
+    
     for(int i=0; i<6; i++){
         number[i] = (int)(Math.random()*45)+1;
 
@@ -30,8 +35,9 @@ public class test0 {
         for(int n : number){
             System.out.printf("%3d",n);
         }
+        System.out.println("");
 
-
+    }
 
 
     }
