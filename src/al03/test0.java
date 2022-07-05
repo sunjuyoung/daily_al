@@ -9,13 +9,13 @@ public class test0 {
 
 
     int[][]dNum = {
-            {1,3,10,15,25,28},
-            {8,9,24,25,29,35},
-            {4,13,24,30,33,39}
+            {2,3,10,12,25,27},
+            {6,9,19,25,29,30},
+            {37,41,43,30,23,34}
 
     };
     int[] number = new int[6];
-    int N = 7;
+    int N = 4;
     for(int a=0; a<N; a++){
 
     
@@ -25,7 +25,8 @@ public class test0 {
         // for(int d=0; d<dNum.length; d++){
         //     for(int j=0; j<6; j++){
         //         if(dNum[d][j] == number[i]){
-        //             --i;
+        //             if(i>=0)--i;
+                    
         //         }
         //     }
         // }
