@@ -14,7 +14,7 @@ public class insert01 {
         }
 
         for(int i=1; i<N; i++){
-            int point = i;
+            int point = i;                                              
             int value = A[i];
             for(int j=i-1; j>=0; j--){
                 if(A[i]>A[j]){
